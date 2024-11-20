@@ -1,0 +1,84 @@
+# Data Dictionary for Pulse Rates Before and After Exercise Dataset
+
+copyright: This dataset is publicly available and has been used for educational and analytical purposes. 
+All rights to the data remain with the original owners. The data is presented here without any modifications 
+that would misrepresent the original content or context.
+
+description: "The dataset comes from an experiment where students in an introductory statistics 
+class at The University of Queensland measured their own pulse rates before and after a short activity.
+Initially, each student took their own pulse. They then flipped a coin: if it showed heads, they ran in 
+place for one minute; if tails, they sat for one minute. Afterward, all students took their pulse again.
+
+This dataset includes these pulse rate measurements alongside additional physiological and lifestyle data,
+such as height, weight, age, gender, and habits like smoking and alcohol use. These factors allow for a 
+detailed analysis of changes in pulse rates with exercise and potential associations with individual 
+demographics and lifestyle choices."
+
+variables:
+  - name: "Height"
+    description: "Height of the participant."
+    units: "centimeters"
+    missing_value_code: "N/A"
+  
+  - name: "Weight"
+    description: "Weight of the participant."
+    units: "kilograms"
+    missing_value_code: "N/A"
+
+  - name: "Age"
+    description: "Age of the participant."
+    units: "years"
+    missing_value_code: "N/A"
+
+  - name: "Gender"
+    description: "Gender of the participant"
+    Values: 
+    Male: 1
+    Female: 2
+    units: "categorical"
+    missing_value_code: "N/A"
+
+  - name: "Smokes"
+    description: "Indicates whether the participant regularly smokes;
+    Values:
+    Yes: 1
+    No: 2
+    units: "categorical"
+    missing_value_code: "N/A"
+
+  - name: "Alcohol"
+    description: "Indicates whether the participant regularly consumes alcohol; coded as 1 for Yes, 2 for No."
+    units: "categorical"
+    missing_value_code: "N/A"
+
+  - name: "Exercise"
+    description: "Exercise frequency of the participant; 
+    Values:
+    High: 1
+    Moderate: 2
+    Low: 3
+    units: "categorical"
+    missing_value_code: "N/A"
+
+  - name: "Ran"
+    description: "Indicates whether the participant ran or sat between the first and second pulse measurement; 
+    Values:
+    Ran: 1
+    Sat: 2
+    units: "categorical"
+    missing_value_code: "N/A"
+
+  - name: "Pulse1"
+    description: "Pulse rate recorded before exercise."
+    units: "rate per minute"
+    missing_value_code: "N/A"
+
+  - name: "Pulse2"
+    description: "Pulse rate recorded after exercise."
+    units: "rate per minute"
+    missing_value_code: "N/A"
+
+  - name: "Year"
+    description: "Year of data collection."
+    units: "year"
+    missing_value_code: "N/A"
